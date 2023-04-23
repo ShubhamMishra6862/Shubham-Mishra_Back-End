@@ -7,7 +7,7 @@ database=client.steeleye #to create database
 collection=database.tradesList  #create collection
 
 
-async def fetch_Lists(search,assetClass,start,end,minPrice,maxPrice,tradeType,sort,sortIn):
+async def fetchLists(search,assetClass,start,end,minPrice,maxPrice,tradeType,sort,sortIn):
     Matchquery=[]
     if(search!=None):
        Matchquery.append({"$match":{"$or":[
@@ -31,7 +31,10 @@ async def fetch_Lists(search,assetClass,start,end,minPrice,maxPrice,tradeType,so
          Matchquery.append({"$match":{"tradeDetails.buySellIndicator":tradeType}})
     if(sort!=None):
          if(sortIn!=None):
-            Matchquery.append({"$sort":{sort:sortIn}})
+            if(sortIn==1 or sortIn==-1):
+                Matchquery.append({"$sort":{sort:sortIn}})
+            else:
+                return ("invalid sortIn value")
          else:
             Matchquery.append({"$sort":{sort:1}})
 
@@ -49,7 +52,7 @@ async def fetchTrade(id):
     return document
 
 
-async def create_Trade(TradeObject):
+async def createTrade(TradeObject):
     document=TradeObject
     response=await collection.insert_one(document)
     return document

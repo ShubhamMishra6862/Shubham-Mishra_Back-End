@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "64440c5d41e8a38ca2d1c1cb"
+  },
+  "asset_class": "Equity",
+  "counterparty": "L&T",
+  "instrument_id": "U45C",
+  "instrument_name": "ATAGS",
+  "trade_date_time": {
+    "$date": "2023-04-22T16:30:47.273Z"
+  },
+  "trade_details": {
+    "buySellIndicator": "BUY",
+    "price": 200,
+    "quantity": 2
+  },
+  "trade_id": "36L",
+  "trader": "DRDO"
+},{
+  "_id": {
+    "$oid": "64440cc08840fddd82c3b26f"
+  },
+  "asset_class": "Equity",
+  "counterparty": "Rafale",
+  "instrument_id": "U76A",
+  "instrument_name": "HELDRONE",
+  "trade_date_time": {
+    "$date": "2023-04-22T16:30:47.273Z"
+  },
+  "trade_details": {
+    "buySellIndicator": "SELL",
+    "price": 400,
+    "quantity": 22
+  },
+  "trade_id": "45Y",
+  "trader": "JKARMS"
+},{
+  "_id": {
+    "$oid": "644437539dccf29887096982"
+  },
+  "asset_class": "Bond",
+  "counterparty": "Flipkart",
+  "instrument_id": "U79A",
+  "instrument_name": "BSA",
+  "trade_date_time": {
+    "$date": "2023-04-22T19:35:15.167Z"
+  },
+  "trade_details": {
+    "buySellIndicator": "SELL",
+    "price": 390,
+    "quantity": 13
+  },
+  "trade_id": "27S",
+  "trader": "Walmart"
+},{
+  "_id": {
+    "$oid": "64443806bbacc615229b0b91"
+  },
+  "asset_class": "Bond",
+  "counterparty": "Microsoft",
+  "instrument_id": "U80C",
+  "instrument_name": "Jack",
+  "trade_date_time": "2023-04-22T19:35:15.167Z",
+  "trade_details": {
+    "buySellIndicator": "SELL",
+    "price": 410,
+    "quantity": 15
+  },
+  "trade_id": "28I",
+  "trader": "Walmart"
+},{
+  "_id": {
+    "$oid": "6444387cbbacc615229b0b93"
+  },
+  "asset_class": "Fx",
+  "counterparty": "Google",
+  "instrument_id": "U90D",
+  "instrument_name": "BSA",
+  "trade_date_time": "2023-04-22T19:35:15.167Z",
+  "trade_details": {
+    "buySellIndicator": "BUY",
+    "price": 390,
+    "quantity": 13
+  },
+  "trade_id": "28P",
+  "trader": "Walmart"
+},{
+  "_id": {
+    "$oid": "644438bebbacc615229b0b95"
+  },
+  "asset_class": "Fx",
+  "counterparty": "Hasbro",
+  "instrument_id": "U34D",
+  "instrument_name": "GHI",
+  "trade_date_time": "2023-04-22T19:35:15.167Z",
+  "trade_details": {
+    "buySellIndicator": "SELL",
+    "price": 500,
+    "quantity": 13
+  },
+  "trade_id": "29L",
+  "trader": "Walmart"
+}]
