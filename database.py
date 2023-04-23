@@ -28,7 +28,7 @@ async def fetchLists(search,assetClass,start,end,minPrice,maxPrice,tradeType,sor
     if(maxPrice!=None):
          Matchquery.append({"$match":{"trade_details.price":{"$lte": maxPrice}}})
     if(tradeType!=None):
-         Matchquery.append({"$match":{"tradeDetails.buySellIndicator":tradeType}})
+         Matchquery.append({"$match":{"trade_details.buySellIndicator":tradeType}})
     if(sort!=None):
          if(sortIn!=None):
             if(sortIn==1 or sortIn==-1):
